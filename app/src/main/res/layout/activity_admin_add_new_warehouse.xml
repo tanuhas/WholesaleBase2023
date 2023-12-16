@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Admin.AdminAddNewProductActivity">
+
+    <ImageView
+        android:id="@+id/select_warehouse_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/warehouses"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/warehouse_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_warehouse_image"
+        android:hint="Наименование склада"
+        android:padding="10dp"
+        android:background="@drawable/input_design"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        />
+    <EditText
+        android:id="@+id/warehouse_adres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warehouse_name"
+        android:hint="Наименование товара"
+        android:padding="10dp"
+        android:background="@drawable/input_design"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_new_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warehouse_adres"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:text="ДОБАВИТЬ СКЛАД"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</RelativeLayout>

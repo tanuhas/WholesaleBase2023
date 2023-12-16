@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/category0"
+    tools:context=".ui.Admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Выберите сферу базы"
+        android:textColor="#0025F1"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/warehouses"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/warehouses" />
+
+        <ImageView
+            android:id="@+id/products"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/products" />
+
+        <ImageView
+            android:id="@+id/clients"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/clients" />
+
+        <ImageView
+            android:id="@+id/posts"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/posts" />
+
+        <ImageView
+            android:id="@+id/orders"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/orders" />
+
+    </LinearLayout>
+
+</RelativeLayout>

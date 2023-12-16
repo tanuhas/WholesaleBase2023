@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A1A1A1"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/gl_name"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:text="Наименование товара: "
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-9dp"
+            android:layout_toRightOf="@+id/gl_name"
+            android:text="Наименование товара"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gl_articul"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="Артикул: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/articul"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gl_articul"
+            android:text="Артикул"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gl_quantity"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articul"
+            android:text="Количество:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articul"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gl_quantity"
+            android:text="Количество"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ql_warehouse"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantity"
+            android:text="Склад:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantity"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ql_warehouse"
+            android:text="Склад"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gl_price"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warehouse"
+            android:text="Цена:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warehouse"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ql_warehouse"
+            android:text="Цена"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEdit"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/button"
+                android:text="ИЗМЕНИТЬ"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDelete"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/button"
+                android:text="УДАЛИТЬ"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

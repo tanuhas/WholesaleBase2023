@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322347842140",
+    "project_id": "wholesalebase-7cf9a",
+    "storage_bucket": "wholesalebase-7cf9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322347842140:android:fea532ec238396edd80499",
+        "android_client_info": {
+          "package_name": "com.example.wholesalebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm8TD0WEmP3xARSjvKkS6tZcDLLW96v1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
